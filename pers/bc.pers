@@ -1,0 +1,25 @@
+.name "BC"
+.attaque 42
+.defense 42
+.vie 42
+.mana 42
+
+#script
+atk 42
+def 42
+spl 42 42
+bst 42 42 42
+atk 42
+spl 42 42
+bst 42 42 42
+atk 42
+def 42
+spl 42 42
+def 42
+spl 42 42
+bst 42 42 42
+def 42
+spl 42 42
+bst 42 42 42
+atk 42
+bst 42 42 42

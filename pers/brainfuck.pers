@@ -1,0 +1,17 @@
+.name "BrAiNfUcK"
+.attaque 1
+.defense 1
+.vie 10
+.mana 5
+
+#script
+atk 2
+bst 2 1 1
+def 2
+bst 2 4 1
+spl 5 1
+atk 3
+bst 5 3 5
+atk 3
+atk 4
+def 10

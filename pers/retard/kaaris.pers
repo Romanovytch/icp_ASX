@@ -1,0 +1,11 @@
+.name "Kaaris two seven"
+.attaque 1
+.defense 1
+.vie 10
+.mana 5
+
+#script
+atk 2 7 0
+def 2 7 0
+spl 2 7 0
+bst 2 7 0
