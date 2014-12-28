@@ -1,0 +1,11 @@
+.name "QWARK"
+.attaque 1
+.defense 1
+.vie 10
+.mana 5
+
+#script
+atk 1
+def 1
+spl 2 1
+bst 2 2 1
