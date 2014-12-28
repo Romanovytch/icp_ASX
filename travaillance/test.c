@@ -5,7 +5,7 @@
 ** Login   <moisse_r@epitech.net>
 **
 ** Started on  Sat Dec 27 14:44:35 2014 Raphael Moisset
-** Last update Sun Dec 28 11:55:50 2014 Raphael Moisset
+** Last update Sun Dec 28 12:36:00 2014 Raphael Moisset
 */
 
 #include <stdlib.h>
@@ -69,12 +69,13 @@ int	main(int ac, char **av)
 	      i++;
 	      j++;
 	    }
+	  name = malloc(sizeof(av[1]));
+	  name = av[1];
 	  stock[j] = '\0';
 	}
       i++;
     }
   on_pese = my_strcat(on_pese, stock);
-  name = malloc(sizeof(on_pese + 2)); //
   buff = bc_read_line(fd);
   i = 0;
   k = 0;
@@ -148,7 +149,12 @@ int	main(int ac, char **av)
     }
   on_pese = my_strcat(on_pese, stock);
   close(fd);
-  fd = open("Qwark.x", O_RDWR | O_CREAT, S_IWUSR | S_IRUSR | S_IRGRP | S_IROTH);
+  i = 0;
+  while (name[i])
+    i++;
+  name[i - 3] = '\0';
+  name[i - 4] = 'x';
+  fd = open(name, O_RDWR | O_CREAT, S_IWUSR | S_IRUSR | S_IRGRP | S_IROTH);
   close(fd);
   return (0);
 }
